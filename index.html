@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>I'm Your Girlfriend? 🐾💕</title>
+  <!-- Google Fonts for cute rounded typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@400;600;700&family=Gaegu:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Decorative floating background doodles -->
+  <div class="background-decorations" aria-hidden="true">
+    <span class="bubble b1"></span>
+    <span class="bubble b2"></span>
+    <span class="bubble b3"></span>
+    <span class="bubble b4"></span>
+    <span class="sparkle s1">✨</span>
+    <span class="sparkle s2">⭐</span>
+    <span class="sparkle s3">✨</span>
+    <span class="heart h1">💖</span>
+    <span class="heart h2">💙</span>
+  </div>
+
+  <main class="app-container">
+    <!-- PAGE 1: REAL CAT BOYFRIEND QUESTION VIEW -->
+    <section id="view-happy" class="view-card active">
+      <div class="cat-image-wrapper">
+        <div class="glow-ring"></div>
+        <img 
+          src="assets/happy_1.jpg" 
+          alt="Cute random happy kitten" 
+          class="cat-avatar happy-cat"
+          id="happy-cat-img"
+        />
+        <div class="mood-tag" id="happy-tag">✨ 100% certified girlfriend</div>
+      </div>
+
+      <h1 class="bestie-title">im your girlfriend?</h1>
+      <p class="sub-caption">do you accept me as your girlfriend? 🥺💕</p>
+
+      <!-- Stats / Progress bar -->
+      <div id="evade-status" class="evade-status">
+        <span class="tag-label" id="tag-label-text">Click Attempts: <b id="evade-count">0</b></span>
+      </div>
+
+      <!-- Action Buttons Area -->
+      <div class="button-area" id="btn-container">
+        <button type="button" id="btn-yes" class="btn btn-yes">
+          <span class="btn-icon">🐾</span>
+          <span class="btn-text">Yes</span>
+        </button>
+
+        <button type="button" id="btn-no" class="btn btn-no">
+          <span class="btn-icon">💔</span>
+          <span class="btn-text">No</span>
+        </button>
+      </div>
+
+      <div class="playful-hint" id="playful-hint-text">💡 Catch the Yes button to say yes!</div>
+    </section>
+
+    <!-- PAGE 2: SAD REAL CRYING CAT REJECTION VIEW -->
+    <section id="view-sad" class="view-card hidden">
+      <div class="broken-heart-banner">
+        <span>💔</span>
+        <span>😿</span>
+        <span>💔</span>
+      </div>
+
+      <div class="cat-image-wrapper sad-wrapper">
+        <div class="rain-container" aria-hidden="true">
+          <span class="teardrop t1">💧</span>
+          <span class="teardrop t2">💧</span>
+          <span class="teardrop t3">💧</span>
+          <span class="teardrop t4">💧</span>
+        </div>
+        <img 
+          src="assets/sad_1.jpg" 
+          alt="Sad crying random kitten" 
+          class="cat-avatar sad-cat"
+          id="sad-cat-img"
+        />
+        <div class="mood-tag sad-tag" id="sad-tag-text">😭 Girlfriend Rejected</div>
+      </div>
+
+      <h1 class="sad-title">WHY WOULD U SAY NO...</h1>
+      <p class="sad-caption" id="sad-caption-text">girlfriend rejected :(<br>my little kitten heart is broken into pieces...</p>
+
+      <div class="sad-puddle-note">
+        <span>💧 You made your girlfriend cry a river of tears! 💧</span>
+      </div>
+
+      <div class="button-area">
+        <button type="button" id="btn-retry" class="btn btn-retry">
+          <span class="btn-icon">🥺</span>
+          <span class="btn-text">Wait, I'm sorry! Take it back!</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- PAGE 3: SUCCESS ACCEPTED BOYFRIEND VIEW (UNLOCKED AFTER 20-25 CLICKS) -->
+    <section id="view-success" class="view-card hidden">
+      <div class="celebration-banner">
+        <span>🎉</span>
+        <span>😻</span>
+        <span>💖</span>
+        <span>✨</span>
+        <span>🎉</span>
+      </div>
+
+      <div class="cat-image-wrapper success-wrapper">
+        <div class="glow-ring success-glow"></div>
+        <img 
+          src="assets/happy_1.jpg" 
+          alt="Celebration happy girlfriend kitten" 
+          class="cat-avatar success-cat"
+          id="success-cat-img"
+        />
+        <div class="mood-tag success-tag">💍 OFFICIAL GIRLFRIEND!</div>
+      </div>
+
+      <h1 class="success-title">YAYYY! I'M YOUR GIRLFRIEND!</h1>
+      <p class="success-caption" id="success-caption-text">
+        You chased me down and finally caught me! 🐾💕<br>
+        I promise to give you unlimited love, snuggles & purrs!
+      </p>
+
+      <div class="success-stat-badge" id="success-stat">
+        <span>🏆 Total Chases: <b id="final-clicks">23</b> clicks</span>
+      </div>
+
+      <div class="button-area">
+        <button type="button" id="btn-play-again" class="btn btn-success-replay">
+          <span class="btn-icon">🔄</span>
+          <span class="btn-text">Play Again</span>
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <!-- Container for floating popup reaction tags -->
+  <div id="reaction-container" class="reaction-container" aria-hidden="true"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
